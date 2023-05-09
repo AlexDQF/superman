@@ -1,51 +1,59 @@
 <!DOCTYPE html>
-<html lang="fr" dir="ltr">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Batman">
-    <title>Batman</title>
-   <link rel="shortcut icon" href="./asset/batman_90804.png" type="image/x-icon">
+    <meta name="description" content="Superman">
+    <title>Superman</title>
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     <header>
-        <h1>
-            Batman Begins
-        </h1>
+        <h1>La sémantique html<sup>5</sup></h1>
     </header>
 
     <main>
-        <figure>
-            <img src="/asset/11809562-1964606913694678.jpg" alt="Batman Begins">
-            <figcaption>
-                <h2>Caractéristiques</h2>
-                <ul>
-                    <li>Franchise: DC Comics</li>
-                    <li>Acteurs: Christian Bale, Michael Caine, Liam Neeson, Katie Holmes, Gary</li>
-                    <li>Réalisateur: Christopher Nolan</li>
-                    <li>Langues des sous titres: <strong>fr, it, esp</strong></li>
-                    <li>Date de sortie cinéma: <time datetime="2005-09-10">10/09/2005</time></li>
-                </ul>
-                <details>
-                        <summary>Déscription</summary>
-                    <p>
-                        Comment un homme seul peut-il changer le monde ? 
-                        Telle est la question qui hante Bruce Wayne depuis cette nuit tragique où 
-                        ses parents furent abattus sous ses yeux, dans une ruelle de Gotham City. 
-                        Torturé par un profond sentiment de colère et de culpabilité, 
-                        le jeune héritier de cette richissime famille fuit Gotham pour un long et 
-                        discret voyage à travers le monde. Le but de ses pérégrinations : 
-                        sublimer sa soif de vengeance en trouvant de nouveaux moyens de lutter 
-                        contre l’injustice.
-                    </p>
-                </details>
-            </figcaption>
-        </figure>
+        <section class = "block" id="presentation">
+            <div>
+            <h2 class="comics">- Les comics dc -</h2>
+            <p class="texte">
+                DC Comics est l'une des principales maisons d’édition américaines
+                 de comics. DC Comics fait partie du conglomérat WarnerMedia. 
+                 Les initiales « DC » sont une abréviation de « Detective Comics », 
+                 mais ont aussi été « détournées » de leur sens originel par Marvel 
+                 Comics pour désigner DC comme la « Distinguée concurrence »
+                 [réf. nécessaire]. DC comporte plusieurs filiales, notamment Vertigo, 
+                 plutôt dédiée au fantastique, et Wildstorm, plutôt dédiée à la 
+                 science-fiction et aux aventures de super-héros plus modernes.
+            </p>
+            </div>
+            <figure>
+                <h2 class="hero">- Superman le retour -</h2>
+                <p>Hello world fine ?</p>
+                <img src="./asset/hub_super01_cvr_1500_5b3e561f3788f5.51606704.jpg" alt="Superman" loading="lazy">
+                <figcaption>
+                    <h2 class="description">-Description-</h2>
+                    <p>Plus vite que la lumière et au delà</p>
+                    <ul>
+                        <li>Paris</li>
+                        <li>14 rue de repos</li>
+                        <li>75020</li>
+                        <li>@Nous contacter</li>
+                    </ul>
+                    
+                </figcaption>
+            </figure>
+        </section>
+        <aside>
+            <p>Choisissez votre comics dans la liste</p>
+            <button class="button search" aria-label="search">RECHERCHER</button>
+            <button class="button drop" aria-label="vider">VIDER LE PANIER</button>
+            <button class="button add" aria-label="ajouter">AJOUTER AU PANIER</button>
+        </aside>
     </main>
     <footer>
-        <p>&copy; - MT - 2023</p>
+        <p>&copy - MIT - <time>2023</time></p>
     </footer>
 </body>
 </html>
